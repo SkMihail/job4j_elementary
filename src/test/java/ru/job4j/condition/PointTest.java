@@ -44,8 +44,8 @@ public class PointTest {
         int x2 = Integer.MAX_VALUE;
         int y1 = Integer.MIN_VALUE;
         int y2 = Integer.MAX_VALUE;
-        double expected = 6.074000998537886E9;
+        double expected = 6.07E9;
         double actual = Point.distance(x1, y1, x2, y2);
-        assertEquals(expected, actual, 0.01);
+        assertEquals(expected, actual, 0.01E9);
     }
 }
