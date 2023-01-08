@@ -39,7 +39,7 @@ public class PointTest {
     }
 
     @Test
-    public void whenXYminIntXYmaxIntThen1dot41() {
+    public void whenXYminIntXYmaxIntThen6dot07E9() {
         int x1 = Integer.MIN_VALUE;
         int x2 = Integer.MAX_VALUE;
         int y1 = Integer.MIN_VALUE;
