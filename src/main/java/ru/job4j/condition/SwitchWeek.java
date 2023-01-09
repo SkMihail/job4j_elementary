@@ -29,7 +29,6 @@ public class SwitchWeek {
                 name = "Ошибка";
                 break;
         }
-        /* switch */
         return name;
     }
 
