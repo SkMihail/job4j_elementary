@@ -5,7 +5,17 @@ public class Counter {
     public static int sum(int start, int finish) {
         int sum = 0;
         for (int i = start; i <= finish; i++) {
-            sum += i;
+                sum += i;
+        }
+        return sum;
+    }
+
+    public static int sumByEven(int start, int finish) {
+        int sum = 0;
+        for (int i = start; i <= finish; i++) {
+            if (i % 2 == 0) {
+                sum += i;
+            }
         }
         return sum;
     }
@@ -14,5 +24,9 @@ public class Counter {
         System.out.println(sum(5, 15));
         System.out.println(sum(0, 4));
         System.out.println(sum(-10, 10));
+
+        System.out.println(sumByEven(5, 15));
+        System.out.println(sumByEven(0, 4));
+        System.out.println(sumByEven(-10, 10));
     }
 }
