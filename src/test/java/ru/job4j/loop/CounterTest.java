@@ -15,7 +15,7 @@ class CounterTest {
     }
 
     @Test
-    public void whenSumEvenNumbersFrom2To10Then28() {
+    public void whenSumEvenNumbersFrom3To10Then28() {
         int start = 3;
         int finish = 10;
         int result = Counter.sumByEven(start, finish);
