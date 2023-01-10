@@ -13,9 +13,17 @@ public class ChessBoard {
         return i >= 0 && i <= 7;
     }
 
-    public static boolean coordinateIsValid(int x1, int y1, int x2, int y2) {
-        return isValueOnBoard(x1) && isValueOnBoard(y1)
-                && isValueOnBoard(x2) && isValueOnBoard(y2);
+    public static boolean coordinateIsValid(int... points) {
+        int count = points.length;
+        if (count != 4) {
+            return false;
+        }
+        for (int i : points) {
+            if (isValueOnBoard(i)) {
+                count--;
+            }
+        }
+        return count == 0;
     }
 
     public static boolean stepIsValid(int x1, int y1, int x2, int y2) {
