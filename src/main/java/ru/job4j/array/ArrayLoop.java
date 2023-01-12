@@ -6,8 +6,10 @@ public class ArrayLoop {
         for (int i = 0; i < yValue.length; i++) {
             yValue[i] = i * 2 + 3;
         }
+        int count = 0;
         for (int y: yValue) {
-            System.out.println(y);
+            System.out.printf("yValue[%d] = %d%s", count, y, System.lineSeparator());
+            count++;
         }
     }
 }
