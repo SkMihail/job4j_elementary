@@ -7,7 +7,7 @@ public class ArrayLoop {
             yValue[i] = i * 2 + 3;
         }
         int count = 0;
-        for (int y: yValue) {
+        for (int y : yValue) {
             System.out.printf("yValue[%d] = %d%s", count, y, System.lineSeparator());
             count++;
         }
