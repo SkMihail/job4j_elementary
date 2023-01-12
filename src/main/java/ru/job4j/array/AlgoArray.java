@@ -1,7 +1,5 @@
 package ru.job4j.array;
 
-import java.util.Arrays;
-
 public class AlgoArray {
     public static int[] sortArr(int[] arr) {
         boolean isSorted = false;
@@ -22,10 +20,22 @@ public class AlgoArray {
     }
 
     public static void main(String[] args) {
-        int[] array = {10, 8, 9, 6, 4, 7, 3, 2, 1, 0, 5};
-        System.out.println(Arrays.toString(sortArr(array)));
-        Arrays.sort(array);
-        System.out.println(Arrays.toString(array));
+        int[] array = new int[] {5, 3, 2, 1, 4};
+        int temp = array[0];
+        array[0] = array[3];
+        array[3] = temp;
+
+        temp = array[1];
+        array[1] =  array[2];
+        array[2] = temp;
+
+        temp = array[3];
+        array[3] = array[4];
+        array[4] = temp;
+
+        for (int index = 0; index < array.length; index++) {
+            System.out.println(array[index]);
+        }
     }
 }
 
