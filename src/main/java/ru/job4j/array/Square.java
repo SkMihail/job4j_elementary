@@ -12,7 +12,7 @@ public class Square {
     }
 
     public static void main(String[] args) {
-        int[] arr = calculate(10);
+        int[] arr = calculate(5);
         System.out.println(Arrays.toString(arr));
     }
 }
