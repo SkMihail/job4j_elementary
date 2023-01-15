@@ -23,7 +23,7 @@ class JavaNameValidatorTest {
 
     @Test
     void whenLatNumberValid() {
-        assertThat(isNameValid("first1")).isTrue();
+        assertThat(isNameValid("first12")).isTrue();
     }
 
     @Test
